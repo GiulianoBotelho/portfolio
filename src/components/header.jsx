@@ -9,17 +9,25 @@ height: 8vh;
 overflow: hidden;
 z-index: -2;
 `
+
 const SideBar = styled.nav`
 width: 100%;
 display: flex;
 justify-content: flex-end;
 align-items: center;
+
 ul{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 35vw;
     list-style: none;
+    @media (max-width:600px){
+      width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 }
 
 `

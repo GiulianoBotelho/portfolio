@@ -25,6 +25,10 @@ text-align: center;
 width: 35vw;
 display: flex;
 flex-wrap: wrap;
+@media (max-width:600px){
+  width: 100%;
+  height: 100vh;
+ }
 `
 
 const ProImg = styled(motion.img)`
@@ -33,6 +37,9 @@ height: 35vh;
 box-shadow: 4px 4px black;
 border: solid goldenrod 1.2px;
 opacity: 0.8;
+@media (max-width:600px){
+  width: 100%;
+ }
 
 `
 
@@ -56,10 +63,15 @@ color:black;
 font-family: 'Courier New', Courier, monospace;
 font-size: 1rem;
 font-style: italic;
+@media (max-width:600px){
+  width: 100%;
+  height: 45vh;
+ }
 `
 
 const Img = styled(motion.img) `
  width:40px;
+ 
 `
 
 const ProTitulo = styled(motion.h1) `
@@ -103,7 +115,7 @@ export default function Projetos() {
               src={item.Imagem} alt="" />
               <FigTexto
               initial={{opacity:0.1}}
-              whileInView={{opacity:1, y:25}}
+              whileInView={{opacity:1, y:10}}
               transition={{ delay:0.5}}
             
               >

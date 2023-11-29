@@ -10,6 +10,10 @@ border-radius: 15%;
 opacity: 0.8;
 border: solid 2px;
 box-shadow: 1px 2px 2px 2px black;
+@media (max-width:600px){
+  width: 100%;
+  border: solid red;
+}
 `
 export const ImgTexto = styled(motion.figcaption)`
 font-size: 2rem;
@@ -17,6 +21,8 @@ text-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
+@media (max-width:600px){
+}
 `
 export default function Inicio() {
   return (
