@@ -27,12 +27,13 @@ display: flex;
 flex-wrap: wrap;
 `
 
-const ProImg = styled.img`
+const ProImg = styled(motion.img)`
 width: 34.9vw;
 height: 35vh;
 box-shadow: 4px 4px black;
-border: solid black 1px;
+border: solid goldenrod 1.2px;
 opacity: 0.8;
+
 `
 
 const ProSection = styled.section`
@@ -60,6 +61,18 @@ font-style: italic;
 const Img = styled(motion.img) `
  width:40px;
 `
+
+const ProTitulo = styled(motion.h1) `
+font-size: 1.5rem;
+border-bottom: solid 1px;
+transition: 500ms;
+cursor: pointer;
+color: goldenrod;
+&:hover{
+  color: whitesmoke;
+  transition: 500ms;
+}
+`
 export default function Projetos() {
   const [projeto, setProjeto] = useState(
     [
@@ -81,11 +94,17 @@ export default function Projetos() {
         <ProSection>
           {projeto.map((item) =>
             <FigProImg key={item.Imagem}>
-              <h1>{item.titulo}</h1>
-              <ProImg src={item.Imagem} alt="" />
+              <ProTitulo>{item.titulo}</ProTitulo>
+              <ProImg
+              initial={{opacity:0}}
+              animate={{opacity:1}}
+              transition={{duration:1}}
+              
+              src={item.Imagem} alt="" />
               <FigTexto
               initial={{opacity:0.1}}
-              whileHover={{opacity:1, y:25}}
+              whileInView={{opacity:1, y:25}}
+              transition={{ delay:0.5}}
             
               >
                 <p>{item.descricao} <a href={item.link} target='_blank'>Saiba mais!</a> </p>

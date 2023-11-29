@@ -13,13 +13,32 @@ const GlobalCSS = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,28,1) 57%, rgba(9,9,121,1) 300%); */
-    background-color: #002C3D;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,28,1) 57%, rgba(9,9,121,1) 300%);
+    /* background-color: #002C3D; */
     font-family: 'Cormorant SC', serif;
     font-family: 'Titillium Web', sans-serif;
     color: #FFE482;
 
   }
+  
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: solid 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
 `
 const CaixaNome = styled.article`
 height: 100vh;
