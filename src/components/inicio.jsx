@@ -12,7 +12,6 @@ border: solid 2px;
 box-shadow: 1px 2px 2px 2px black;
 @media (max-width:600px){
   width: 100%;
-  border: solid red;
 }
 `
 export const ImgTexto = styled(motion.figcaption)`

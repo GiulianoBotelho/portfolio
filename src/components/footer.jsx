@@ -16,7 +16,17 @@ ul{
   align-items: center;
   flex-direction: column;
 
+  @media (max-width:600px){
+    width: 10vw;
+  }
   
+}
+img{
+  
+  cursor: pointer;
+  @media (max-width:600px){
+    width: 25px;
+  }
 }
 `
 

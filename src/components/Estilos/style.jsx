@@ -6,6 +6,9 @@ width: 99%;
 display: flex;
 align-items: center;
 justify-content: center;
+@media (max-width:600px){
+    flex-direction: column;
+}
 `
 
 export const MainTitulo = styled.h1`

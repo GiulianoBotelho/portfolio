@@ -73,6 +73,7 @@ function App() {
       </CaixaNome>
       <BrowserRouter>
       <Header />
+      
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='Sobre' element={<Sobre />} />

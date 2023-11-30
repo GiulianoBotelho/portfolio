@@ -9,6 +9,13 @@ border: solid whitesmoke;
 background-color: rgb(0,0,0, 0.5);
 border-radius: 2%;
 padding-left: 6px;
+@media (max-width:600px){
+  width: 90vw;
+  height: 60vh;
+  font-size: 1.2rem;
+  overflow-y: auto;
+  z-index: 1;
+}
 `
 const Fundo = styled.div`
 display: flex;
@@ -23,10 +30,18 @@ width: 2vw;
 margin-left: 91%;
 border-radius: 20%;
 background-color: #f7c775;
+@media (max-width:600px){
+  width: 9vw;
+  font-size: 1.2rem;
+  margin-left:88vw;
+}
 `
 
 const P = styled.p `
 font-size: 1.5rem;
+@media (max-width:600px){
+  font-size: 1.2rem;
+}
 `
 export default function Modal({ isOpen, setOpenModal }) {
 
@@ -39,7 +54,7 @@ export default function Modal({ isOpen, setOpenModal }) {
         <Botao onClick={() => setOpenModal(false)}>x</Botao>
         <Artigo
           initial={{ x: 0, opacity: 0 }}
-          animate={{ x: 20, opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ ease: 'easeInOut', duration: 1 }}
 
         >
