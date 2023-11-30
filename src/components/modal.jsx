@@ -1,8 +1,8 @@
 import React from 'react'
-import { Artigo } from './Estilos/Estilo-Modal.jsx'
-import { Fundo } from './Estilos/Estilo-Modal.jsx'
-import { BotaoFechar } from './Estilos/Estilo-Modal.jsx'
-import { P } from './Estilos/Estilo-Modal.jsx'
+import { Artigo } from './Estilos/Estilo-modal.jsx'
+import { Fundo } from './Estilos/Estilo-modal.jsx'
+import { BotaoFechar } from './Estilos/Estilo-modal.jsx'
+import { P } from './Estilos/Estilo-modal.jsx'
 
 export default function Modal({ isOpen, setOpenModal }) {
 
