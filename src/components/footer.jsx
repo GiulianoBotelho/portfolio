@@ -33,14 +33,14 @@ img{
 export default function Footer() {
   return (
     <>
-    <Rodape>
-      <nav>
-        <ul>
-          <li><a target='_blank' href="https://www.linkedin.com/in/giuliano-botelho/"><img src={Linkedin} alt="" /></a></li>
-          <li><a target='_blank' href="https://github.com/GiulianoBotelho"><img src={Github} alt="" /></a></li>
-          <li><a target='_blank' href="https://www.instagram.com/giuliano_botelho/"><img src={Insta} alt="" /></a></li>
-        </ul>
-      </nav>
+      <Rodape>
+        <nav>
+          <ul>
+            <li><a target='_blank' href="https://www.linkedin.com/in/giuliano-botelho/"><img src={Linkedin} alt="" /></a></li>
+            <li><a target='_blank' href="https://github.com/GiulianoBotelho"><img src={Github} alt="" /></a></li>
+            <li><a target='_blank' href="https://www.instagram.com/giuliano_botelho/"><img src={Insta} alt="" /></a></li>
+          </ul>
+        </nav>
       </Rodape>
     </>
   )

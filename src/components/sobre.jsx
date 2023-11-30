@@ -1,63 +1,14 @@
 import React from 'react'
-import { Intro } from './Estilos/style.jsx'
+import { Intro } from './Estilos/Estilo-Inicio.jsx'
 import Giuliano from '../assets/Imagens/Giuliano.jpeg'
-import { motion } from 'framer-motion'
 import Modal from './modal.jsx'
 import { useState } from 'react'
-import styled from 'styled-components'
+import { SobreImg } from './Estilos/Estilo-sobre.jsx'
+import { SobreFig } from './Estilos/Estilo-sobre.jsx'
+import { SobreMim } from './Estilos/Estilo-sobre.jsx'
+import { FigTexto } from './Estilos/Estilo-sobre.jsx'
+import { Div } from './Estilos/Estilo-sobre.jsx'
 
-const SobreImg = styled(motion.img)`
-width: 30vw;
-border: solid;
-@media (max-width:600px){
-    object-fit: contain;
-
-}
-`
-const SobreFig = styled.figure`
-
-@media (max-width:600px){
-  width: 100%;
-  height: 60vh;
-}
-`
-export const SobreMim = styled.button`
-  width: 6vw;
- height:4vh;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #FFE482;
-  outline: none;
-  transition: 0.5s ease-in-out;
-  color: white;
-  font-size: 50%;
-  &:hover {
-  transition: 0.5s ease-in-out;
-  background: #FFE482;
-  color:black;
- 
-}
-@media (max-width:600px){
-  width:30vw;
-}
-`
-const FigTexto = styled.figcaption`
- font-size: 1.6rem;
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-@media (max-width:600px){
-}
- `
-const Div = styled(motion.div)`
-display: flex;
-align-items: center;
-justify-content: center;
-@media (max-width:600px){
-  width: 99%;
-}
-`
 export default function Sobre() {
   const [openModal, setOpenModal] = useState(false)
   const imgAnimation = {

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import Header from './components/header.jsx'
 import Footer from './components/footer.jsx'
