@@ -9,11 +9,11 @@ border: solid whitesmoke;
 background-color: rgb(0,0,0, 0.5);
 border-radius: 2%;
 padding-left: 6px;
+overflow-y: auto;
 @media (max-width:600px){
   width: 90vw;
   height: 60vh;
   font-size: 1.2rem;
-  overflow-y: auto;
   z-index: 1;
 }
 `

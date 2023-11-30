@@ -8,6 +8,7 @@ import styled from 'styled-components'
 
 const SobreImg = styled(motion.img)`
 width: 30vw;
+border: solid;
 @media (max-width:600px){
 
 }
@@ -49,7 +50,9 @@ align-items: center;
 }
  `
 const Div = styled(motion.div)`
-border: solid;
+display: flex;
+align-items: center;
+justify-content: center;
 @media (max-width:600px){
   width: 99%;
 }
