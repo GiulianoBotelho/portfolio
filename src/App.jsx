@@ -49,6 +49,11 @@ justify-content: center;
 position: absolute;
 z-index: -1;
 overflow: hidden;
+@media (max-width:600px){
+  font-size: 4rem;
+  width: 99vw;
+  overflow-x: hidden;                                                      
+}
 
 `
 const Nome = styled(motion.p)`
@@ -56,6 +61,11 @@ font-size: 15rem;
 opacity: 0.1;
 color: whitesmoke;
 font-family: 'Playfair Display', serif;
+@media (max-width:600px){
+  font-size: 8rem;
+
+ 
+  }
 `
 function App() {
   return (
@@ -63,17 +73,17 @@ function App() {
       <GlobalCSS />
       <CaixaNome>
         <Nome
-          initial={{x:"90%"}}
-          animate={{x:"-50%"}}
-          transition={{repeat:Infinity, duration: 15, repeatType:'mirror'}}
-  
+          initial={{ x: "90%" }}
+          animate={{ x: "-50%" }}
+          transition={{ repeat: Infinity, duration: 15, repeatType: 'mirror' }}
+
         >
           Giuliano Botelho
         </Nome>
       </CaixaNome>
       <BrowserRouter>
-      <Header />
-      
+        <Header />
+
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='Sobre' element={<Sobre />} />

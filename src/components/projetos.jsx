@@ -39,6 +39,7 @@ border: solid goldenrod 1.2px;
 opacity: 0.8;
 @media (max-width:600px){
   width: 100%;
+  object-fit:cover;
  }
 
 `
@@ -64,7 +65,8 @@ font-size: 1rem;
 font-style: italic;
 @media (max-width:600px){
   width: 100%;
-  height: 45vh;
+  height: 38vh;
+  font-size: 0.9rem;
  }
 `
 

@@ -10,6 +10,7 @@ const SobreImg = styled(motion.img)`
 width: 30vw;
 border: solid;
 @media (max-width:600px){
+    object-fit: contain;
 
 }
 `
