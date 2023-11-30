@@ -20,7 +20,7 @@ color: #FFE482;
 export const IniImg = styled(motion.img)`
 cursor: pointer;
 border-radius: 15%;
-opacity: 0.8;
+
 border: solid 2px;
 box-shadow: 1px 2px 2px 2px black;
 @media (max-width:600px){

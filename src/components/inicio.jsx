@@ -12,7 +12,7 @@ export default function Inicio() {
       >
         <figure>
           <IniImg initial={{ opacity: 0 }}
-            animate={{ opacity: 0.9, x: 0, }}
+            animate={{ opacity: 0.6, x: 0, }}
             transition={{ duration: 4 }}
             src={Giphy} alt="" />
           <ImgTexto
