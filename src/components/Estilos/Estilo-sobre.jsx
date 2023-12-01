@@ -29,6 +29,7 @@ export const SobreMim = styled.button`
   transition: 0.5s ease-in-out;
   background: #FFE482;
   color:black;
+  scale:1.05;
 }
 @media (max-width:600px){
   width:30vw;

@@ -46,7 +46,14 @@ export default function Projetos() {
         <ProSection>
           {projeto.map((item) =>
             <FigProImg key={item.Imagem}>
-              <ProTitulo>{item.titulo}</ProTitulo>
+             <section>
+             <ProTitulo>
+                {item.titulo}
+               
+              </ProTitulo>
+                <a style={{ textDecoration: "none" }} href={item.link} target='_blank'>  <SobreMim style={{ fontSize: '12px', color: "black", fontWeight: "bold", backgroundColor: "goldenrod" }}> Minha Página</SobreMim></a>
+                  <a style={{ textDecoration: "none" }} href={item.github} target='_blank'>   <SobreMim style={{ fontSize: '12px', color: " goldenrod", fontWeight: "bold", backgroundColor: "black", color: "goldenrod" }}> Repositório</SobreMim></a>
+             </section>
               <ProImg
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -58,9 +65,6 @@ export default function Projetos() {
                 transition={{ delay: 0.5 }}
               >
                 <p>{item.descricao}</p>
-                <p><a style={{ textDecoration: "none" }} href={item.link} target='_blank'>  <SobreMim style={{ fontSize: '12px', color: "goldenrod", fontWeight: "bold", backgroundColor: "black" }}> Minha Página</SobreMim></a>
-                  <a style={{ textDecoration: "none" }} href={item.github} target='_blank'>   <SobreMim style={{ fontSize: '12px', color: "black", fontWeight: "bold", backgroundColor: "whitesmoke", color: "goldenrod" }}> Repositório</SobreMim></a>
-                </p>
                 <figure>
                   {item.html && <Img src={item.html} />}
                   {item.css && <Img src={item.css} />}

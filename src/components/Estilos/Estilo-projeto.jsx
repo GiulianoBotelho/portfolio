@@ -67,7 +67,6 @@ transition: 500ms;
 cursor: pointer;
 color: goldenrod;
 &:hover{
-  color: whitesmoke;
   transition: 500ms;
 }
 `
