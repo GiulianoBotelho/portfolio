@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 export const SobreImg = styled(motion.img)`
 width: 30vw;
 border: solid;
+border-radius:8%;
 @media (max-width:600px){
     object-fit: contain;
 
@@ -15,7 +16,7 @@ export const SobreFig = styled.figure`
   height: 60vh;
 }
 `
-export const SobreMim = styled.button`
+export const SobreMim = styled(motion.button)`
   width: 6vw;
  height:4vh;
   cursor: pointer;
@@ -25,6 +26,7 @@ export const SobreMim = styled.button`
   transition: 0.5s ease-in-out;
   color: white;
   font-size: 50%;
+  border-radius:5%;
   &:hover {
   transition: 0.5s ease-in-out;
   background: #FFE482;
@@ -35,7 +37,7 @@ export const SobreMim = styled.button`
   width:30vw;
 }
 `
-export const FigTexto = styled.figcaption`
+export const FigTexto = styled(motion.figcaption)`
  font-size: 1.6rem;
 text-align: center;
 display: flex;

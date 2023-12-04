@@ -13,6 +13,7 @@ flex-wrap: wrap;
 
 export const ProImg = styled(motion.img)`
 width: 34.9vw;
+border-radius: 0.5%;
 height: 35vh;
 box-shadow: 4px 4px black;
 border: solid goldenrod 1.2px;
@@ -24,7 +25,7 @@ object-fit:cover;
 
 `
 
-export const ProSection = styled.section`
+export const ProSection = styled(motion.section)`
 height: 90vh;
 width: 100vw;
 display: flex;
@@ -48,6 +49,7 @@ font-family: 'Courier New', Courier, monospace;
 font-size: 1.2rem;
 font-style: italic;
 overflow-y: auto;
+border-radius: 0.5%;
 @media (max-width:600px){
   width: 100%;
   height: 38vh;

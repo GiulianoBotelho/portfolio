@@ -7,7 +7,7 @@ width: 50vw;
 height: 65vh;
 border: solid whitesmoke;
 background-color: rgb(0,0,0, 0.5);
-border-radius: 2%;
+border-radius: 1%;
 padding-left: 6px;
 overflow-y: auto;
 @media (max-width:600px){
@@ -30,7 +30,7 @@ align-items: center;
 export const BotaoFechar = styled.button`
   cursor: pointer;
 width: 2vw;
-margin-left: 91%;
+margin-left: 89%;
 border-radius: 20%;
 background-color: #f7c775;
 @media (max-width:600px){

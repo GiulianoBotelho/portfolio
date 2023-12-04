@@ -3,25 +3,48 @@ import { Intro } from './Estilos/Estilo-Inicio.jsx'
 import Giphy from '../assets/Imagens/giphy.gif'
 import { IniImg } from './Estilos/Estilo-Inicio.jsx'
 import { ImgTexto } from './Estilos/Estilo-Inicio.jsx'
+import { motion } from 'framer-motion'
 
 export default function Inicio() {
+   const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 0.7,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+  
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  };
   return (
     <>
       <Intro
 
       >
-        <figure>
-          <IniImg initial={{ opacity: 0 }}
-            animate={{ opacity: 0.6, x: 0, }}
-            transition={{ duration: 4 }}
+        <motion.figure
+         className="container"
+         variants={container}
+         initial="hidden"
+         animate="visible"
+        >
+          <IniImg
+          className="item" variants={item}
             src={Giphy} alt="" />
           <ImgTexto
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 3, delay: 2 }}
+          className="item" variants={item}
+          
 
           >Bem vindo ao meu portfólio!</ImgTexto>
-        </figure>
+        </motion.figure>
       </Intro>
     </>
   )

@@ -40,20 +40,21 @@ export default function Projetos() {
       { Imagem: Todo, titulo: "Minha primeira ToDo List", Alt: "Imagem projeto To-Do List", descricao: "Uma lista de tarefas simples feita em react. A ideia proposta era armazenar os dados recebidos pelo input dentro da lista. Você pode visitar minha página em:", html: html5, JS: js, reacts: reacts, styles: styles, link: "https://giulianobotelho.github.io/To-Do-List_React/", github: "https://github.com/GiulianoBotelho/To-Do-List_React" }
     ]
   )
+
+  
   return (
     <>
       <Intro>
         <ProSection>
           {projeto.map((item) =>
             <FigProImg key={item.Imagem}>
-             <section>
-             <ProTitulo>
-                {item.titulo}
-               
-              </ProTitulo>
+              <section>
+                <ProTitulo>
+                  {item.titulo}
+                </ProTitulo>
                 <a style={{ textDecoration: "none" }} href={item.link} target='_blank'>  <SobreMim style={{ fontSize: '12px', color: "black", fontWeight: "bold", backgroundColor: "goldenrod" }}> Minha Página</SobreMim></a>
-                  <a style={{ textDecoration: "none" }} href={item.github} target='_blank'>   <SobreMim style={{ fontSize: '12px', color: " goldenrod", fontWeight: "bold", backgroundColor: "black", color: "goldenrod" }}> Repositório</SobreMim></a>
-             </section>
+                <a style={{ textDecoration: "none" }} href={item.github} target='_blank'>   <SobreMim style={{ fontSize: '12px', color: " goldenrod", fontWeight: "bold", backgroundColor: "black", color: "goldenrod" }}> Repositório</SobreMim></a>
+              </section>
               <ProImg
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

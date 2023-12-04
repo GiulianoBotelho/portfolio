@@ -8,6 +8,7 @@ import { SobreFig } from './Estilos/Estilo-sobre.jsx'
 import { SobreMim } from './Estilos/Estilo-sobre.jsx'
 import { FigTexto } from './Estilos/Estilo-sobre.jsx'
 import { Div } from './Estilos/Estilo-sobre.jsx'
+import { easeInOut } from 'framer-motion'
 
 export default function Sobre() {
   const [openModal, setOpenModal] = useState(false)
@@ -15,6 +16,7 @@ export default function Sobre() {
     open: { y: -50, },
     closed: { y: 0 },
   };
+
   return (
     <>
       <Intro>
@@ -26,17 +28,21 @@ export default function Sobre() {
           >
             <SobreImg
               style={{ width: "400px" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.9, x: 0, }}
-              transition={{ duration: 4 }}
+              initial={{ opacity: 0, y:50 }}
+              animate={{ opacity: 0.9, y:0, }}
+              transition={{ ease:"easeInOut" }}
               src={Giuliano} />
           </Div>
           <FigTexto
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2, delay: 1, ease: 'easeIn' }}
+            initial={{ opacity: 0, y:50 }}
+            animate={{ opacity: 1, y:0 }}
+            transition={{delay: 0.1, ease: 'easeInOut' }}
           > Desenvolvedor Front-End
-            <SobreMim onClick={() => setOpenModal(true)}>Saiba mais</SobreMim>
+            <SobreMim
+               initial={{ opacity: 0, y:50 }}
+               animate={{ opacity: 1, y:0 }}
+               transition={{delay: 0.1, ease: 'easeInOut' }}
+            onClick={() => setOpenModal(true)}>Saiba mais</SobreMim>
           </FigTexto>
         </SobreFig>
         <Modal isOpen={openModal} setOpenModal={setOpenModal} />
