@@ -57,7 +57,7 @@ overflow: hidden;
 `
 const Nome = styled(motion.p)`
 font-size: 15rem;
-opacity: 0.1;
+opacity: 0.2;
 color: whitesmoke;
 font-family: 'Playfair Display', serif;
 @media (max-width:600px){
@@ -67,22 +67,29 @@ font-family: 'Playfair Display', serif;
   }
 `
 function App() {
+  const variants = {
+    animate:{
+      x:["150%", "-150%"],
+      transition:{
+        x:{
+          repeat:Infinity,
+          repeatType:"loop",
+          duration:12,
+
+        }
+      }
+    }
+  }
   return (
     <>
       <GlobalCSS />
       <CaixaNome>
-        <Nome
-          initial={{ x: "90%" }}
-          animate={{ x: "-50%" }}
-          transition={{ repeat: Infinity, duration: 15, repeatType: 'mirror' }}
-
-        >
+        <Nome  variants={variants}  animate="animate" >
           Giuliano Botelho
         </Nome>
       </CaixaNome>
       <BrowserRouter>
         <Header />
-
         <Routes>
           <Route path='/' element={<Inicio />} />
           <Route path='Sobre' element={<Sobre />} />
