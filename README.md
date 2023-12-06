@@ -1,6 +1,6 @@
 # Portfolio
 
-# Criei meu portfólio utilizando as seguintes tecnologias:
+<h2>Criei meu portfólio utilizando as seguintes tecnologias:</h2>
 <br/>
 <hr/>
 -HTML5
