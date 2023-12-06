@@ -1,6 +1,8 @@
 # Portfolio
 
 -Criei meu portfólio utilizando as seguintes tecnologias:
+<br/>
+<hr/>
 -HTML5
 <br/>
 <hr/>
@@ -12,5 +14,6 @@
 <hr/>
 -ReactJS
 <br/>
-
 -Framer-Motion
+<br/>
+<hr/>
